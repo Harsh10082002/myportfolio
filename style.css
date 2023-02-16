@@ -3,10 +3,12 @@
     margin: 0%;
 }
 nav{
-    background: linear-gradient(to right, #52796f, #84a89c);
+    /* background: linear-gradient(to right, #52796f, #84a89c); */
+    background-color: yellow;
     box-shadow: 2px 1px 20px #52796f;
     box-sizing: border-box;
     width: 100%;
+    position: fixed;
 }
 nav .container-fluid{
     margin: 2% 0 2% 2%;
@@ -132,7 +134,7 @@ img{
         padding: 10px 0;
     }
     #skills .both-skills{
-        width: 400px;
+        width: 370px;
         left:9%;
         margin: 5% 0;
     }
