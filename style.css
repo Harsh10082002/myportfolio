@@ -3,8 +3,7 @@
     margin: 0%;
 }
 nav{
-    /* background: linear-gradient(to right, #52796f, #84a89c); */
-    background-color: yellow;
+    background: linear-gradient(to right, #52796f, #84a89c);
     box-shadow: 2px 1px 20px #52796f;
     box-sizing: border-box;
     width: 100%;
@@ -44,7 +43,7 @@ nav .container-fluid ul li a{
     text-decoration: none;
 }
 
-img{
+#home img{
     width: 300px;
     height: 300px;
     border-radius: 100%;
@@ -121,6 +120,77 @@ img{
     font-size: 1.2rem; 
 }
 
+.contact-me{
+    background: linear-gradient(to top, #cad2c5, #52796f);
+    height: 100%;
+    padding:3% 0;
+
+}
+.contact-me h1{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 2.2rem;
+    text-align: center;
+}
+.contact-me p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem; 
+    text-align: center;
+}
+.contact-me .form{
+    background-color: white;
+    padding: 4%;
+    width: 400px;
+    height: 280px;
+    box-sizing: border-box;
+    border-radius: 5%;
+}
+.contact-me .map{
+    width: 400px;
+    height: 280px;
+}
+.contact-me .map iframe{
+    border-radius: 5%;
+    width: 400px;
+    height: 280px;
+    border: none;
+
+}
+.contact-me .contact-and-map{
+    margin: 3% 0 3% 20%;
+}
+
+.contact-me .form form input, .contact-me .form form textarea{
+    margin: 2%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #2f3e46;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;   
+}
+.contact-me .form form input, .contact-me .form form textarea:focus{
+    outline: none;
+}
+.contact-me .form form button{
+    width: 250px;
+    background-color: #2f3e46;
+    color: white;
+}
+header{
+    /* margin-left: 35%; */
+    text-align: center;
+}
+header img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 2%;
+}
+
 @media only screen and (max-width: 700px) and (min-width: 300px){
     nav .container-fluid ul{
         margin-left: 0;
@@ -134,11 +204,25 @@ img{
         padding: 10px 0;
     }
     #skills .both-skills{
-        width: 370px;
+        width: 400px;
         left:9%;
         margin: 5% 0;
     }
     #skills .both-skills p{
         margin-top: 30px;
+    }
+    .contact-me .form{
+        margin-bottom: 3%;
+        margin-left: 12px;
+        width: 300px;
+        height: 240px;
+    }
+    .contact-me .map{
+        width: 300px;
+        height: 240px;
+    }
+    .contact-me .map iframe{
+        width: 300px;
+        height: 240px;
     }
 }
