@@ -1,8 +1,12 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
 nav{
     background: linear-gradient(to right, #52796f, #84a89c);
     box-shadow: 2px 1px 20px #52796f;
-    width: auto;
-    
+    box-sizing: border-box;
+    width: 100%;
 }
 nav .container-fluid{
     margin: 2% 0 2% 2%;
@@ -45,9 +49,11 @@ img{
     box-shadow: 4px 4px 20px #2f3e46;
 }
 #home{
-    background: linear-gradient(to right, #60857b, #84a89c);
+    background: linear-gradient(to right, rgb(132, 168, 156), #84a89c);
     padding: 7.8% 0%;
-    width: auto;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
 }
 #home .text{
     text-align: center;
@@ -68,71 +74,51 @@ img{
     font-weight: 500;
     font-size: 2.0rem;
 }
-.about{
-    background-color: #a9c1ce;
+
+#skills{
+    /* background-color:; */
+    height:100%;
+    margin: 2% 0;
 
 }
-.about .explaination {
-    text-align: center;
-    padding: 2% 0;  
+#skills .both-skills img{
+    width: 140px;
+    height: 140px;
 }
-.about .explaination h1{
+#skills .both-skills{
+    width: 550px;
+    /* background-color: #cad2c5; */
+    display: flex;
+    position: relative;
+    left:27%;
+}
+#skills .both-skills p{
+    margin-top: 43px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+    color: #52796f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem; 
+}
+.skill-explanation{
+    text-align: center;
+    padding: 2% 0;
+}
+.skill-explanation h1{
+    color: #52796f;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-size: 2.2rem;
 }
-
-.about .explaination p{
+.skill-explanation p{
+    color: #52796f;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 1.2rem;
-}
-.about .education{
-    width: 23rem;
-    height: 19rem;
-    margin: 0 5px 0 37.5px;
-    position: relative;
-    perspective: 1000px;
+    font-weight: 500;
+    font-size: 1.2rem; 
 }
 
-.about .edu-heading{
-    width: 23rem;
-    height: 19rem;
-    background-color: lightgray;
-    font-size: 2.5rem;
-    font-weight:lighter;
-    text-align: center;
-    line-height: 19rem;
-    color: black;
-    border-radius: 4%;
-
-
-}
-.about .edu-content{
-    width: 23rem;
-    height: 19rem;
-    background-color: #82a6cb;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: rotateX(90deg);
-    box-shadow: 5px 5px 10px  black;
-    border-radius: 4%;
-}
-.about .edu-content p{
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 1.2rem;
-    padding: 4% 0 4% 4%;
-}
-.education:hover .edu-content{
-    transform: rotateX(0deg);
-    transition: all 0.5s;
-}
-.all-quality{
-    padding: 4%;
-}
 @media only screen and (max-width: 700px) and (min-width: 300px){
     nav .container-fluid ul{
         margin-left: 0;
@@ -144,5 +130,13 @@ img{
     #home .img{
         text-align: center;
         padding: 10px 0;
+    }
+    #skills .both-skills{
+        width: 400px;
+        left:9%;
+        margin: 5% 0;
+    }
+    #skills .both-skills p{
+        margin-top: 30px;
     }
 }
