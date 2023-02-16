@@ -1,0 +1,54 @@
+nav{
+    background: linear-gradient(to right, #52796f, #84a89c);
+    box-shadow: 1px 1px 20px #52796f;
+}
+nav .container-fluid{
+    margin: 2%;
+}
+nav .container-fluid #hire-btn{
+    background-color: #2f3e46;
+    color: white;
+    border: none;
+    width: 250px;
+    height: 60px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+nav .container-fluid #hire-btn:hover{
+    border: 1.3px solid #cad2c5;
+}
+
+nav .container-fluid ul{
+    margin-left: 20%;
+}
+nav .container-fluid ul li a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 2.2rem;
+    color: white;
+    padding: 0 30px;
+    text-decoration: none;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+#home{
+    height: 100%;
+    background-color: #84a89c;
+    
+}
+
+@media only screen and (max-width: 700px) and (min-width: 400px){
+    nav .container-fluid ul{
+        margin-left: 0;
+    }
+    nav .container-fluid ul li a{
+        font-size: 1.5rem;
+        padding: 0px;
+    }
+}
