@@ -1,22 +1,25 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
 }
-nav{
+
+nav {
     background: linear-gradient(to right, #52796f, #84a89c);
     box-shadow: 2px 1px 20px #52796f;
     box-sizing: border-box;
     width: 100%;
-    position: fixed;
 }
-nav .container-fluid{
+
+nav .container-fluid {
     margin: 2% 0 2% 2%;
 }
-nav .container-fluid span{
+
+nav .container-fluid span {
     width: 50px;
     height: 50px;
 }
-nav .container-fluid #hire-btn{
+
+nav .container-fluid #hire-btn {
     background-color: #2f3e46;
     color: white;
     border: none;
@@ -26,15 +29,20 @@ nav .container-fluid #hire-btn{
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-size: 1.6rem;
+    text-align: center;
+    text-decoration: none;
+    line-height: 3.5rem;
 }
-nav .container-fluid #hire-btn:hover{
+
+nav .container-fluid #hire-btn:hover {
     border: 1.3px solid #cad2c5;
 }
 
-nav .container-fluid ul{
+nav .container-fluid ul {
     margin-left: 20%;
 }
-nav .container-fluid ul li a{
+
+nav .container-fluid ul li a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-size: 2.2rem;
@@ -43,57 +51,102 @@ nav .container-fluid ul li a{
     text-decoration: none;
 }
 
-#home img{
+nav .container-fluid ul li a:hover{
+    border-bottom: 3px solid #cad2c5;
+}
+
+#home img {
     width: 300px;
     height: 300px;
     border-radius: 100%;
     box-shadow: 4px 4px 20px #2f3e46;
 }
-#home{
+
+#home {
     background: linear-gradient(to right, rgb(132, 168, 156), #84a89c);
     padding: 7.8% 0%;
     box-sizing: border-box;
     width: 100%;
     margin: 0;
 }
-#home .text{
+
+#home .text {
     text-align: center;
 
 }
-#home .text h1{
+
+#home .text h1 {
     color: white;
     font-family: 'Dancing Script', cursive;
     font-weight: 900;
     font-size: 4.0rem;
 }
-#home .text h1::first-letter, .text span{
+
+#home .text h1::first-letter,
+.text span {
     color: #2f3e46;
 }
-#home .text p{
+
+#home .text p {
     color: white;
     font-family: 'Dancing Script', cursive;
     font-weight: 500;
     font-size: 2.0rem;
 }
 
-#skills{
-    /* background-color:; */
-    height:100%;
-    margin: 2% 0;
-
+.about{
+    height: 100%;
 }
-#skills .both-skills img{
+
+.about .about-head{
+    color: #52796f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    /* font-size: 5rem; */
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 2% 0;
+}
+.about .all-quality{
+    
+    box-sizing: border-box;
+    margin: 3% 4%;
+}
+.all-quality h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.3rem;
+    font-weight: 300;
+    color: black;
+}
+.all-quality .quality-education p, .q-li{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.6rem;
+    font-weight: 200;
+    color: #52796f;
+}
+
+#skills {
+    height: 100%;
+    margin: 2% 0;
+}
+#skills .main-div-skill{
+    padding: 2% 10%;
+}
+
+#skills .both-skills img {
     width: 140px;
     height: 140px;
 }
-#skills .both-skills{
+
+#skills .both-skills {
     width: 550px;
     /* background-color: #cad2c5; */
     display: flex;
     position: relative;
-    left:27%;
+    left: 27%;
 }
-#skills .both-skills p{
+
+#skills .both-skills p {
     margin-top: 43px;
     margin-right: 20px;
     margin-left: 20px;
@@ -101,46 +154,52 @@ nav .container-fluid ul li a{
     color: #52796f;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
 }
-.skill-explanation{
+
+.skill-explanation {
     text-align: center;
     padding: 2% 0;
 }
-.skill-explanation h1{
+
+.skill-explanation h1 {
     color: #52796f;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-size: 2.2rem;
 }
-.skill-explanation p{
+
+.skill-explanation p {
     color: #52796f;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
 }
 
-.contact-me{
+.contact-me {
     background: linear-gradient(to top, #cad2c5, #52796f);
     height: 100%;
-    padding:3% 0;
+    padding: 3% 0;
 
 }
-.contact-me h1{
+
+.contact-me h1 {
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-size: 2.2rem;
     text-align: center;
 }
-.contact-me p{
+
+.contact-me p {
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
     text-align: center;
 }
-.contact-me .form{
+
+.contact-me .form {
     background-color: white;
     padding: 4%;
     width: 400px;
@@ -148,81 +207,116 @@ nav .container-fluid ul li a{
     box-sizing: border-box;
     border-radius: 5%;
 }
-.contact-me .map{
+
+.contact-me .map {
     width: 400px;
     height: 280px;
 }
-.contact-me .map iframe{
+
+.contact-me .map iframe {
     border-radius: 5%;
     width: 400px;
     height: 280px;
     border: none;
 
 }
-.contact-me .contact-and-map{
+
+.contact-me .contact-and-map {
     margin: 3% 0 3% 20%;
 }
 
-.contact-me .form form input, .contact-me .form form textarea{
+.contact-me .form form input,
+.contact-me .form form textarea {
     margin: 2%;
     border: none;
     background-color: transparent;
     border-bottom: 1px solid #2f3e46;
     font-weight: bold;
     width: 250px;
-    height: 40px;   
+    height: 40px;
 }
-.contact-me .form form input, .contact-me .form form textarea:focus{
+
+.contact-me .form form input,
+.contact-me .form form textarea:focus {
     outline: none;
 }
-.contact-me .form form button{
+
+.contact-me .form form button {
     width: 250px;
     background-color: #2f3e46;
     color: white;
 }
-header{
+
+header {
     /* margin-left: 35%; */
     text-align: center;
 }
-header img{
+
+header img {
     width: 70px;
     height: 70px;
     border-radius: 50%;
     margin: 0 2%;
 }
 
-@media only screen and (max-width: 700px) and (min-width: 300px){
-    nav .container-fluid ul{
+.horizontal-line {
+    border-top: 15px dotted black;
+    background-color: white;
+    width: 5%;
+    margin: 3% 0 3% 48%; 
+}
+
+@media only screen and (max-width: 700px) and (min-width: 300px) {
+    nav .container-fluid ul {
         margin-left: 0;
     }
-    nav .container-fluid ul li a{
+
+    nav .container-fluid ul li a {
         font-size: 1.5rem;
         padding: 0px;
     }
-    #home .img{
+
+    #home .img {
         text-align: center;
         padding: 10px 0;
     }
-    #skills .both-skills{
+
+    #skills .both-skills {
         width: 400px;
-        left:9%;
+        left: 9%;
         margin: 5% 0;
     }
-    #skills .both-skills p{
+
+    #skills .both-skills p {
         margin-top: 30px;
     }
-    .contact-me .form{
+
+    .contact-me .form {
         margin-bottom: 3%;
         margin-left: 12px;
         width: 300px;
         height: 240px;
     }
-    .contact-me .map{
+
+    .contact-me .map {
         width: 300px;
         height: 240px;
     }
-    .contact-me .map iframe{
+
+    .contact-me .map iframe {
         width: 300px;
         height: 240px;
+    }
+    .contact-me .contact-and-map {
+        margin: 3% 0 3% 17%;
+    }
+    #skills .main-div-skill{
+        padding: 0%;
+    }
+    .horizontal-line {
+        border-top: 15px dotted #2f3e46;
+        margin: 3% 0 5% 38%; 
+        width: 20%;
     }
 }
+

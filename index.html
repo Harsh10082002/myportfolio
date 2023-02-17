@@ -2,8 +2,6 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
@@ -22,7 +20,9 @@
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <button id="hire-btn">Hire Me</button>
+            <a href="#contact" id="hire-btn" onclick="contact">Hire Me</a>
+            <!-- <button id="hire-btn" onclick="contact">Hire Me</button> -->
+
             <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -31,23 +31,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="active" aria-current="page" href="#">Home</a>
+                        <a class="active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="active" aria-current="page" href="#">About</a>
+                        <a class="active" aria-current="page" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="active" aria-current="page" href="#">Skills</a>
+                        <a class="active" aria-current="page" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="active" aria-current="page" href="#">Contact</a>
+                        <a class="active" aria-current="page" href="#contact">Contact</a>
                     </li>
 
                 </ul>
             </div>
         </div>
     </nav>
-
 
     <section class="row" id="home" class="home">
         <div class="col col-lg-6 col-md-12 col-12 text">
@@ -59,6 +58,46 @@
             <img src="images/h3.jpeg" alt="">
         </div>
     </section>
+
+    <section id="about" class="about">
+        <h1 class="about-head">More About Me</h1>
+
+        <div class="row all-quality">
+            <div class="col col-lg-4 col-12 quality-education">
+                <h1>Education</h1>
+                <div class="edu-quality-content">
+                    <p>Currently I am pursuing BTECH from SRIT with CS.
+                    And I have completed my schooling from Mispa Mission Higher Secondary School. And secured 67.4% in class 12th.</p>
+                </div>
+            </div>
+
+            <div class="col col-lg-4 col-12 quality-strength">
+                <h1>Strength</h1>
+                <div class="strength-quality-content">
+                    <p>
+                        <ul>
+                            <li class="q-li">Hardworking</li>
+                            <li class="q-li">Polite and Versatile in nature</li>
+                        </ul>
+                   </p>
+                </div>
+            </div>
+
+            <div class="col col-lg-4 col-12 quality-hobby">
+                <h1>Hobbies</h1>
+                <div class="hobby-content">
+                    <p>
+                        <ul>
+                            <li class="q-li">I usually love to play chess in my spare time because it help's me to be focused on a particular work.</li>
+                            <li class="q-li">I love to play cricket as well</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="horizontal-line">
 
     <section id="skills" class="skills">
         <div class="skill-explanation">
@@ -79,18 +118,18 @@
         </div>
     </section>
 
-    <section class="contact-me">
+    <section id="contact" class="contact-me">
         <h1>Let's Connect</h1>
         <p>Below are the options to be connected!</p>
         <div class="row contact-and-map">
             <div class="col col-lg-6 col-12 form">
                 <form class="" action="">
-                    <input placeholder="Name" type="text" name="Name" id=""><br>
+                    <input placeholder="Name" type="text" name="Name" id="name"><br>
                     <!-- <label for="">Email:-</label><br> -->
                     <input placeholder="Email" type="email" name="email" id=""><br>
                     <!-- <label for="">Message</label><br> -->
                     <textarea placeholder="Message" name="enter message"></textarea><br>
-                    <button type="button" class="btn">Send</button>
+                    <button type="button" class="btn" onclick="fun()">Send</button>
                 </form>
             </div>
             <div class="class=col col-lg-6 col-12 map">
@@ -106,10 +145,7 @@
             <a href=""><img src="images/linkedin-logo.png" alt=""></a>
             
         </header>
-
     </section>
-
-
 </body>
 
 </html>
